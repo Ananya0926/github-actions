@@ -1,0 +1,22 @@
+# workflows
+# should have name
+  name: Hello
+# on tells when the workflows should run (give indentation by tab)
+  on: 
+   workflow_dispatch: 
+# Jobs
+# jobs should be inside workflow and it s in samll letter and multiple jobs can be there
+  jobs:
+   say-hello:
+     # create an ephermal container of ubuntu
+    runs-on: ubuntu-latest
+    # that container has stpes in it 
+    steps:
+    - name: say hello to all
+      run: echo "hello dosto"
+
+# steps
+# should be inside jobs
+
+# Actions
+# should be inside steps
