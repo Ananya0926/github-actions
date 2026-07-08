@@ -1,7 +1,7 @@
-age=10;
+age=10
 
-if (age>=18)
+if (age>=18):
     print("can vote")
 
-else
+else:
     print("no vote")
