@@ -1,0 +1,17 @@
+# linter checks syntax , indenatation and code spelling .
+name: python-linter
+
+on:
+  push:
+   paths: "*.py"
+
+jobs:
+   code:
+     runs-on: ubuntu-latest
+     steps:
+     - name: clone the code 
+       # rather using runs on will use uses:
+       uses: actions/checkout@v7
+     - name: Install linter
+       run: pip install ruff
+      
